@@ -1,0 +1,495 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ei",
+				"eirex"
+			],
+			[
+				"in",
+				"input_val"
+			],
+			[
+				"list",
+				"list_array"
+			],
+			[
+				"lis",
+				"list_array"
+			],
+			[
+				"lo",
+				"localStorage"
+			],
+			[
+				"st",
+				"student_object"
+			],
+			[
+				"sr",
+				"student_string"
+			],
+			[
+				"stu",
+				"student_string"
+			],
+			[
+				"ch",
+				"children"
+			],
+			[
+				"add",
+				"addElement"
+			],
+			[
+				"li",
+				"link\tTag"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"ge",
+				"getElementById"
+			],
+			[
+				"val",
+				"valEntered"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"find",
+				"findTodo"
+			],
+			[
+				"to",
+				"toLowerCase"
+			],
+			[
+				"my",
+				"myString"
+			],
+			[
+				"t",
+				"todos"
+			],
+			[
+				"onun",
+				"onunload\tAttr"
+			],
+			[
+				"Exa",
+				"Exam2"
+			],
+			[
+				"pl",
+				"plot"
+			],
+			[
+				"user",
+				"username"
+			],
+			[
+				"Fo",
+				"ForeignKey"
+			],
+			[
+				"foll",
+				"follower_name"
+			],
+			[
+				"post",
+				"post_feed"
+			],
+			[
+				"po",
+				"post_feed"
+			],
+			[
+				"pos",
+				"post_feed"
+			],
+			[
+				"d",
+				"dashboard"
+			],
+			[
+				"U",
+				"UserFormView"
+			],
+			[
+				"soc",
+				"SOCIAL_AUTH_GITHUB_KEY"
+			],
+			[
+				"u",
+				"user_views"
+			],
+			[
+				"Crea",
+				"CreateComment"
+			],
+			[
+				"comm",
+				"comment_form"
+			],
+			[
+				"re",
+				"request"
+			],
+			[
+				"pro",
+				"profile_photo"
+			],
+			[
+				"post_",
+				"post_form"
+			],
+			[
+				"def",
+				"default"
+			],
+			[
+				"is",
+				"is_valid"
+			],
+			[
+				"al",
+				"already_a_follower"
+			],
+			[
+				"us",
+				"username"
+			],
+			[
+				"fol",
+				"Following"
+			],
+			[
+				"up",
+				"UpdateProfileForm"
+			],
+			[
+				"Fie",
+				"FileField"
+			],
+			[
+				"login",
+				"login_required"
+			],
+			[
+				"fi",
+				"first_name"
+			],
+			[
+				"col",
+				"col-md-7"
+			],
+			[
+				"col-",
+				"col-sm-12"
+			],
+			[
+				"fo",
+				"form-data"
+			],
+			[
+				"template",
+				"template_name"
+			],
+			[
+				"fon",
+				"font-family\tproperty"
+			],
+			[
+				"border-",
+				"border-radius\tproperty"
+			],
+			[
+				"nab",
+				"navbar"
+			],
+			[
+				"text",
+				"text-align\tproperty"
+			],
+			[
+				"nav",
+				"navbar-toggle"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"sele",
+				"selected_song"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"color",
+				"UI: Select Color Scheme"
+			],
+			[
+				"col",
+				"UI: Select Color Scheme"
+			],
+			[
+				"colo",
+				"UI: Select Color Scheme"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/PRANAV/Documents/web/LICENSE",
+		"/C/Users/PRANAV/Documents/demo/LICENSE.md",
+		"/C/Users/PRANAV/.bash_profile",
+		"/C/Users/PRANAV/Documents/demo/demo/README.md",
+		"/C/Program Files/Sublime Text 3/sublime.py",
+		"/C/Users/PRANAV/Documents/a.py",
+		"/C/Users/PRANAV/Documents/pw.py",
+		"/C/Users/PRANAV/Documents/JS/styles.css",
+		"/C/Users/PRANAV/Documents/JS/methods.html",
+		"/C/Users/PRANAV/Documents/JS/index.html",
+		"/C/Program Files/Sublime Text 3/Packages/Color Scheme - Default.sublime-package",
+		"/C/Users/PRANAV/Documents/linR.py",
+		"/C/Users/PRANAV/Documents/logR.py",
+		"/C/Users/PRANAV/Desktop/a.py",
+		"/C/Users/PRANAV/Documents/djangowebsite/music/urls.py",
+		"/C/Users/PRANAV/Desktop/logR.py",
+		"/C/Users/PRANAV/Desktop/linR.py",
+		"/C/Users/PRANAV/Documents/SocialNetwork/SocialNetwork/urls.py",
+		"/C/Users/PRANAV/Documents/SocialNetwork/core/templates/core/profile.html",
+		"/C/Users/PRANAV/Documents/SocialNetwork/core/templates/core/login.html",
+		"/C/Users/PRANAV/Documents/SocialNetwork/core/forms.py",
+		"/C/Users/PRANAV/Documents/SocialNetwork/core/admin.py",
+		"/C/Users/PRANAV/Documents/SocialNetwork/core/apps.py",
+		"/C/Users/PRANAV/Documents/SocialNetwork/manage.py",
+		"/C/Users/PRANAV/Documents/SocialNetwork/core/models.py",
+		"/C/Users/PRANAV/Documents/SocialNetwork/core/templates/core/feed.html",
+		"/C/Users/PRANAV/Documents/SocialNetwork/core/views.py",
+		"/C/Users/PRANAV/Documents/SocialNetwork/core/templates/__init__.py",
+		"/F/New folder (2)/api.py",
+		"/C/Users/PRANAV/Downloads/a.py",
+		"/C/Users/PRANAV/Documents/SocialNetwork/core/migrations/0005_post.py",
+		"/C/Users/PRANAV/Desktop/c.py",
+		"/C/Users/PRANAV/Desktop/b.py",
+		"/C/Users/PRANAV/Desktop/1.txt",
+		"/C/Users/PRANAV/Downloads/astrodata_star_cluster_final.txt",
+		"/C/Users/PRANAV/Documents/Gyaani/core/templates/core/login.html",
+		"/C/Users/PRANAV/Documents/Gyaani/Gyaani/urls.py",
+		"/C/Users/PRANAV/Documents/SocialNetwork/core/templates/core/index.html",
+		"/C/Users/PRANAV/Documents/Gyaani/core/static/core/dashboard.css",
+		"/C/Users/PRANAV/Documents/SocialNetwork/core/static/core/styles.css",
+		"/C/Users/PRANAV/Documents/Gyaani/core/templates/core/base.html",
+		"/C/Users/PRANAV/Documents/Gyaani/core/templates/core/index.html",
+		"/C/Users/PRANAV/Documents/Gyaani/core/templates/core/register.html",
+		"/C/Users/PRANAV/Documents/Gyaani/core/templates/core/login (2).html",
+		"/C/Users/PRANAV/Documents/Gyaani/Gyaani/settings.py",
+		"/C/Users/PRANAV/Documents/SocialNetwork/SocialNetwork/settings.py",
+		"/C/Users/PRANAV/Documents/Gyaani/core/forms.py",
+		"/C/Users/PRANAV/Documents/Gyaani/core/views.py",
+		"/C/Users/PRANAV/Documents/Gyaani/core/templates/core/registration_form.html",
+		"/C/Users/PRANAV/Downloads/tabler/tabler-gh-pages/login.html",
+		"/C/Users/PRANAV/Documents/Gyaani/Gyaani/templates/registrations/login.html",
+		"/C/Users/PRANAV/Documents/Gyaani/core/templates/core/form-template.html",
+		"/C/Users/PRANAV/Documents/Gyaani/manage.py",
+		"/C/Users/PRANAV/Downloads/tabler/tabler-gh-pages/profile.html",
+		"/C/Users/PRANAV/Documents/djangowebsite/music/templates/music/index.html",
+		"/C/Users/PRANAV/Documents/djangowebsite/music/views.py",
+		"/C/Users/PRANAV/Documents/djangowebsite/music/models.py",
+		"/C/Users/PRANAV/Documents/djangowebsite/music/forms.py",
+		"/C/Users/PRANAV/Documents/djangowebsite/music/templates/music/base.html",
+		"/C/Users/PRANAV/Documents/SocialNetwork/core/templates/core/register.html",
+		"/C/Users/PRANAV/Documents/djangowebsite/music/static/music/styles.css",
+		"/C/Users/PRANAV/Documents/SocialNetwork/core/templates/core/form-template.html",
+		"/C/Users/PRANAV/Documents/SocialNetwork/core/templates/core/login (3).html",
+		"/C/Users/PRANAV/Downloads/tabler/tabler-gh-pages/form-elements.html",
+		"/C/Users/PRANAV/Documents/SocialNetwork/core/templates/core/profile2.html",
+		"/C/Users/PRANAV/Documents/SocialNetwork/core/signals.py",
+		"/C/Users/PRANAV/Downloads/tabler/tabler-gh-pages/register.html",
+		"/C/Users/PRANAV/Documents/style.css",
+		"/C/Users/PRANAV/Documents/djangowebsite/music/templates/music/registration_form.html",
+		"/C/Users/PRANAV/Documents/djangowebsite/music/templates/music/detail.html",
+		"/C/Users/PRANAV/Documents/SocialNetwork/core/templates/core/base.html",
+		"/C/Users/PRANAV/Documents/SocialNetwork/core/templates/core/logout.html",
+		"/C/Users/PRANAV/Documents/djangowebsite/djangowebsite/settings.py",
+		"/C/Users/PRANAV/Documents/djangowebsite/music/templates/music/form-template.html",
+		"/C/Users/PRANAV/Documents/djangowebsite/music/templates/music/album_form.html",
+		"/C/Users/PRANAV/Documents/djangowebsite/djangowebsite/urls.py",
+		"/C/Users/PRANAV/Documents/djangowebsite/music/admin.py",
+		"/C/Users/PRANAV/Documents/djangowebsite/music/tests.py",
+		"/F/Bootstrap 4 Site Starter Files/index.html",
+		"/F/Bootstrap 4 Site Starter Files/stylespranav.css",
+		"/C/Users/PRANAV/Downloads/style.css",
+		"/C/Users/PRANAV/Downloads/(index)",
+		"/F/djangowebsite/music/views.py",
+		"/F/djangowebsite/djangowebsite/urls.py",
+		"/F/djangowebsite/music/urls.py",
+		"/F/djangowebsite/music/templates/music/index.html",
+		"/C/Users/PRANAV/Desktop/temp.html"
+	],
+	"find":
+	{
+		"height": 29.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 40.8
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "manage.sublime-project",
+	"replace":
+	{
+		"height": 54.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"post",
+				"core\\migrations\\0005_post.py"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 158.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

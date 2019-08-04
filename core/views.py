@@ -2,20 +2,23 @@ from django.shortcuts import render,redirect
 from django.views import generic
 from django.views.generic import View
 from django.views.generic.edit import CreateView,UpdateView,DeleteView
-from .forms import UserForm,UpdateUserForm,UpdateProfileForm,CreatePost
+from .forms import UserForm,UpdateUserForm,UpdateProfileForm,CreatePost,CreateComment
 from django.http import HttpResponse 
 from django.contrib.auth import authenticate,login
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import AuthenticationForm
-from .models import User,Following,Follower
+from .models import User,Following,Follower,Post
 from django.urls import reverse
+from django.http import HttpResponseRedirect
 
 
 
 
 def index(request):
 	return render(request,'core/index.html')
+
+
 
 @login_required
 def profile(request, username):
@@ -26,26 +29,13 @@ def profile(request, username):
 		
 
 		if u_form.is_valid() and p_form.is_valid():
-			uname = u_form.cleaned_data['username']
 
 			u_form.save()
 			p_form.save()
-			u_name = User.objects.get(username=uname)
-			for peeps in u_name.follower_set.all():
-				peeps = User.objects.get(username=peeps)
-				a=peeps.following_set.get(following_name = username)
-				a.following_name = uname
-				a.save()
-
-			for peeps in u_name.following_set.all():
-				peeps = User.objects.get(username=peeps)
-				a=peeps.follower_set.get(follower_name = username)
-				a.follower_name = uname
-				a.save()
-
+			
 
 			messages.success(request,f'Your Profile has been updated!')
-			url = reverse('profile', kwargs = {'username' : uname})
+			url = reverse('profile', kwargs = {'username' : username})
 			return redirect(url)
 
 	else:
@@ -60,28 +50,32 @@ def profile(request, username):
 					'p_form':p_form,
 					'post_form':post_form,
 					'person':person,
+					
 			}	
 		else:
 			person = User.objects.get(username = username)
 			already_a_follower=0
 			for followers in person.follower_set.all():
-				if (followers.follower_name ==  request.user.username):
+				if (followers.follower_user ==  request.user.username):
 					already_a_follower=1
 					break;
 
 			if already_a_follower==1:
 				context = {
 						'person':person,
+						
 							
 					}
 			else:
 				context = {
 						'person':person,
 						'f':1,
+						
 					}
+		comment_form = CreateComment()
+		context.update({'comment_form':comment_form})
 
-
-	return render(request, 'core/profile.html', context )
+	return render(request, 'core/profile.html', context)
 
 
 
@@ -116,15 +110,15 @@ class UserFormView(View):
 
 
 def followweb(request, username):
-
-	if request.method == 'POST':
-		disciple = User.objects.get(username=request.user.username)
-		leader = User.objects.get(username=username)
-		
-		leader.follower_set.create(follower_name = disciple.username)
-		disciple.following_set.create(following_name = leader.username)
-		url = reverse('profile', kwargs = {'username' : username})
-		return redirect(url)
+	if request.user.username != username:
+		if request.method == 'POST':
+			disciple = User.objects.get(username=request.user.username)
+			leader = User.objects.get(username=username)
+			
+			leader.follower_set.create(follower_user = disciple)
+			disciple.following_set.create(following_user = leader)
+			url = reverse('profile', kwargs = {'username' : username})
+			return redirect(url)
 		
 
 def unfollowweb(request, username):
@@ -133,8 +127,8 @@ def unfollowweb(request, username):
 		disciple = User.objects.get(username=request.user.username)
 		leader = User.objects.get(username=username)
 		
-		leader.follower_set.get(follower_name = disciple.username).delete()
-		disciple.following_set.get(following_name = leader.username).delete()
+		leader.follower_set.get(follower_user = disciple).delete()
+		disciple.following_set.get(following_user = leader).delete()
 		url = reverse('profile', kwargs = {'username' : username})
 		return redirect(url)
 
@@ -149,12 +143,40 @@ def welcome(request):
 def postweb(request, username):
 	if request.method == 'POST':
 
-		post_form = CreatePost(request.POST)
+		post_form = CreatePost(request.POST,request.FILES)
 		if post_form.is_valid():
 			post_text = post_form.cleaned_data['post_text']
+			post_picture = request.FILES.get('post_picture')
+			request.user.post_set.create(post_text=post_text, post_picture = post_picture)
+			messages.success(request,f'You have successfully posted!')
 			
-			request.user.post_set.create(post_text=post_text)
+	url = reverse('profile', kwargs = {'username' : username})
+	return redirect(url)
+
+
+def commentweb(request, username, post_id):
+	if request.method == 'POST':
+
+		comment_form = CreateComment(request.POST)
+		if comment_form.is_valid():
+			comment_text = comment_form.cleaned_data['comment_text']
+			user = User.objects.get(username=username)
+			post = user.post_set.get(pk=post_id)
+			post.comment_set.create(user=request.user,comment_text=comment_text)
+
+			messages.success(request,f'Your Comment has been posted')
 			
 	url = reverse('profile', kwargs = {'username' : username})
 	return redirect(url)
 	
+
+def feed(request):
+
+	post_all = Post.objects.order_by('created_at').reverse()
+
+	comment_form = CreateComment()
+	context = {
+	'post_all' : post_all,
+	'comment_form':comment_form,
+	}
+	return render(request,'core/feed.html',context)

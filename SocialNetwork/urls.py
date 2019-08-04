@@ -1,18 +1,3 @@
-"""SocialNetwork URL Configuration
-
-The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/2.1/topics/http/urls/
-Examples:
-Function views
-    1. Add an import:  from my_app import views
-    2. Add a URL to urlpatterns:  path('', views.home, name='home')
-Class-based views
-    1. Add an import:  from other_app.views import Home
-    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
-Including another URLconf
-    1. Import the include() function: from django.urls import include, path
-    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
-"""
 from django.contrib import admin
 from django.urls import path,include
 from django.contrib.auth import views as auth_views
@@ -27,14 +12,15 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('core/',include('core.urls')),
     path('login/',auth_views.LoginView.as_view(template_name='core/login.html'),name='login'),
-    #path('login/',user_views.LoginForm,name='login'),
+     path('welcome/',user_views.welcome,name="welcome"),
      path('logout/',auth_views.LogoutView.as_view(template_name='core/logout.html'),name='logout'),
      path('register/',user_views.UserFormView.as_view(template_name='core/registration_form.html'),name='register'),
      url(r'^profile/(?P<username>\w+)/$',user_views.profile,name='profile'),
      url(r'^followweb/(?P<username>\w+)/$',user_views.followweb,name="followweb"),
      url(r'^unfollowweb/(?P<username>\w+)/$',user_views.unfollowweb,name="unfollowweb"),
-     path('welcome/',user_views.welcome,name="welcome"),
-     url(r'^postwweb/(?P<username>\w+)/$',user_views.postweb,name="postweb"),
+     url(r'^postweb/(?P<username>\w+)/$',user_views.postweb,name="postweb"),
+     url(r'^commentweb/(?P<username>\w+)/(?P<post_id>\d+)/$', user_views.commentweb,name = "commentweb"),
+     path('feed/',user_views.feed,name="feed"),
      
 ]
 

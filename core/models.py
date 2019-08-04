@@ -12,26 +12,32 @@ class Profile(models.Model):
 		return f'{self.user.username} Profile'
 
 class Post(models.Model):
-	user = models.ForeignKey(User,on_delete = models.CASCADE)
+	user = models.ForeignKey(User,on_delete = models.CASCADE,null=True)
+	created_at = models.DateTimeField(auto_now_add=True)
 	post_text = models.CharField(max_length=2000)
 	post_picture = models.FileField(default="default.jpg",upload_to='post_picture')
 
 
 
-
 class Following(models.Model):
-	user = models.ForeignKey(User,on_delete = models.CASCADE)
-	following_name = models.CharField(max_length=265) 
+	user = models.ForeignKey(User,on_delete = models.CASCADE,null=True)
+	following_user = models.CharField(max_length=100,null=True)
+	
 
 	def __str__(self):
-		return self.following_name
+		return self.following_user.username
 
 
 class Follower(models.Model):
-	user = models.ForeignKey(User,on_delete = models.CASCADE)
-	follower_name = models.CharField(max_length=265) 
+	user = models.ForeignKey(User,on_delete = models.CASCADE,null=True)
+	follower_user = models.CharField(max_length=100,null=True) 
 
 	def __str__(self):
-		return self.follower_name
+		return self.follower_user.username
 
 
+class Comment(models.Model):
+	post = models.ForeignKey(Post,on_delete = models.CASCADE)
+	user = models.ForeignKey(User,on_delete = models.CASCADE,null=True)
+	comment_text = models.CharField(default="Enter Comment Here",max_length=2000)
+	
