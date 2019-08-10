@@ -4,7 +4,6 @@ Social Network is a social networking website made using Django.
 
 ### Installation
 
-Dillinger requires [Node.js](https://nodejs.org/) v4+ to run.
 ```sh
 $  pip install django
 $ pip install --upgrade django-crispy-forms
