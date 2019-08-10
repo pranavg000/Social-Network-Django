@@ -9,6 +9,7 @@ from django.conf.urls import url
 
 
 urlpatterns = [
+    path('', user_views.feed, name='home'),
     path('admin/', admin.site.urls),
     path('core/',include('core.urls')),
     path('login/',auth_views.LoginView.as_view(template_name='core/login.html'),name='login'),
