@@ -1,6 +1,6 @@
 # Social Network
 
-Social Network is a social networking website working on made using Django.
+Social Network is a social networking website made using Django.
 
 ### Installation
 
