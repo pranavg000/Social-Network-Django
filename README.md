@@ -2,6 +2,11 @@
 
 Social Network is a social networking website made using Django.
 
+### Screenshots
+![](Social%20Network/screenshots/social2.png)
+
+![](Social%20Network/screenshots/social.png)
+
 ### Installation
 
 ```sh
