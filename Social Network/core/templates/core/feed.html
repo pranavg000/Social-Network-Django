@@ -76,7 +76,7 @@
                   </div>
                 </div>
                 <div class="dropdown">
-                  <a href="{%url 'profile' user.username%}" class="nav-link pr-0 leading-none" data-toggle="dropdown">
+                  <a href="{% url 'profile' user.username %}" class="nav-link pr-0 leading-none" data-toggle="dropdown">
                     <span class="avatar" style="background-image: url({{user.profile.profile_photo.url}})"></span>
                     <span class="ml-2 d-none d-lg-block">
                       <span class="text-default">{{user.username}}</span>
@@ -117,8 +117,8 @@
           </div>
         </div>
 
-        {%if messages%}
-{%for message in messages%}
+        {% if messages %}
+{% for message in messages %}
 <div class="alert alert-{{ message.tags }}">
 	{{message}}
 </div>
