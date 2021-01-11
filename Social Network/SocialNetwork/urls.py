@@ -16,12 +16,13 @@ urlpatterns = [
     path('welcome/',user_views.welcome,name="welcome"),
     path('logout/',auth_views.LogoutView.as_view(template_name='core/logout.html'),name='logout'),
     path('register/',user_views.UserFormView.as_view(template_name='core/registration_form.html'),name='register'),
-    path('profile/<username>+)/',user_views.profile,name='profile'),
-    path('followweb/(?P<username>/',user_views.followweb,name="followweb"),
+    path('profile/<username>/',user_views.profile,name='profile'),
+    path('followweb/<username>/',user_views.followweb,name="followweb"),
     path('unfollowweb/<username>)/',user_views.unfollowweb,name="unfollowweb"),
     path('postweb/<username>/',user_views.postweb,name="postweb"),
     path('commentweb/<username>/<post_id>/', user_views.commentweb,name = "commentweb"),
     path('feed/',user_views.feed,name="feed"),
+    path('ckeditor/', include('ckeditor_uploader.urls')),
      
 ]
 

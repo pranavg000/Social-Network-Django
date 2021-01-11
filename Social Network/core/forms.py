@@ -1,7 +1,7 @@
 from django.contrib.auth.models import User
 from django import forms
 from .models import Profile,Post,Comment
-
+from ckeditor.widgets import CKEditorWidget
 class UserForm(forms.ModelForm):
 	password = forms.CharField(widget=forms.PasswordInput)
 	email = forms.EmailField(max_length=254, help_text='Required field')
